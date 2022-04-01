@@ -1,0 +1,79 @@
+Exercice 1 :
+
+1.1 )
+	@Override signifie une surcharge, une redéfinition d’une méthode d’une classe mère dans notre classe enfant. Elle apparaît ici car la méthode toString est redéfinit par la classe Configuration.
+Elle n’est pas obligatoire mais préférable.
+
+1.2 )
+	Les attributs ne doivent pas être public car sinon toutes les classes y ont accès et peuvent les manipuler sans passer par nos méthodes qui font un traitement bien précis sur ces attributs.
+Ils doivent être en private.
+
+1.3 )
+	Oui, 2 attributs c1 et c2 sont égaux en terme d’attribut. Ecrire c1.equals(c2) ne me semble pas possible, il faudrait comparé chaque valeur d’attribut que l’on pourrait récupérer avec des méthodes get par exemple puis faire des equals
+	→ c1.getAlpha().equals(c2.getAlpha()) ;
+	…
+
+
+Exercice 2 :
+
+2.1 )
+	Voir Code
+
+2.2 )
+	alpha = 0.85, epsilon=0.001, indice=100, mode=CREUSE
+
+2.3)
+	L’indice ne peut pas être un float , sinon le programme plante, il doit être un Integer.
+
+2.4)
+
+2.5)
+	Voir Code
+
+2.6)
+	
+
+
+
+Exercice 3 :
+
+Exercice 4 :
+
+4.1 )
+	Nous allons construire la vue grace à une Jframe principal, composé de Jpanel qui viendront organisé grace aux layouts, l’ensemble des composants de la Vue.
+
+4.2 )
+	Ajouté un actionListener() sur le bouton puis ajouté au label du bas  « -C », grace au fonction lambda pour rediriger l’action vers une fonction précise. 
+4.3 )
+	Voir Code
+
+Exercice 5 :
+
+ 5.1)
+	Voir Code
+
+5.2)
+	On pourrait les traiter en ajoutant dans le case du CLI l’ensemble des options possibles.
+
+
+Exercice 6 :
+	
+6.1)
+
+<!ELEMENT cli (argument+)>
+<!ELEMENT argument (#PCDATA)>
+<!ATTLIST argument
+	access CDATA #REQUIRED
+	nb CDATA #IMPLIED
+>
+
+6.2)
+Voir Code
+
+
+
+
+
+
+
+	
